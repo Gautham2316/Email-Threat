@@ -1,0 +1,20 @@
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=example.com;
+ i=@example.com; q=dns/txt; s=test2026; t=1792468040; h=from : to :
+ subject : date : message-id;
+ bh=CFxETXnsLe73jVppkrLW34NJ5ye2yS5ObJmZ1hw2NCY=;
+ b=A+CfoAf51ZqlqHUPhrkS05LN3Ql38mhC1KbSg4S7Yp68UtdorIdSVLr4f0mdZAgB4ooDL
+ WmCRd+1ZFVU2psDTxZZZg2VBuP68I2sS81+m7c87qebJ6dj03IVx8VFUovmxXc+LYQE9h4U
+ w1M6vmck6+6FKEUSmNLVLAqwq2ZcYFwYaDUctWUNDxjtiPBJHteumHgh8P94hg6/5wdCaqa
+ a44t1EKps5qS6P9RUNf+6i0Ow/6Xas0F9nCV1HwmtLlwvLhIvHh02FolQmPayL5I7SjXNST
+ NZmJlffZyZ0e8AudPy0gV041nDjmW5Sojkt2nDaYnSKzNXyvuwjA3rhFFFfA==
+From: Alice <alice@example.com>
+To: Bob <bob@example.com>
+Subject: DKIM signed test email (SIH 2026)
+Date: Mon, 20 Oct 2026 09:00:00 +0000
+Message-ID: <sih2026.dkim.test@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+This is a DKIM-signed test email generated for SIH 2026 Module 2 tests.
+The signature is computed with a locally generated RSA-2048 key.
+DNS TXT records are mocked in the test suite - no network access required.

@@ -1,0 +1,22 @@
+From: Alice Sender <alice@example-sender.com>
+To: Bob Recipient <bob@example-recipient.com>
+Subject: Hello from the test suite
+Date: Mon, 01 Jan 2024 10:00:00 +0000
+Message-ID: <plain-text-001@example-sender.com>
+Return-Path: <alice@example-sender.com>
+MIME-Version: 1.0
+X-Mailer: TestMailer 1.0
+Content-Type: text/plain; charset=utf-8
+Received: from mail.example-sender.com (mail.example-sender.com [203.0.113.1])
+        by mx.example-recipient.com (Postfix) with ESMTP id AAA111
+        for <bob@example-recipient.com>; Mon, 1 Jan 2024 10:00:05 +0000
+
+Hello Bob,
+
+This is a simple plain-text test email used by the automated test suite.
+It contains a link to our website: https://www.example.com
+
+No attachments. No HTML. Just plain text.
+
+Best regards,
+Alice

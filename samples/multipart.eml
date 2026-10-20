@@ -1,0 +1,66 @@
+From: Newsletter <newsletter@example-news.com>
+To: subscriber@example-recipient.com
+Cc: archive@example-recipient.com
+Subject: =?UTF-8?b?V2Vla2x5IERpZ2VzdCDigJQgSXNzdWUgNDI=?=
+Date: Tue, 02 Jan 2024 08:30:00 +0000
+Message-ID: <multipart-002@example-news.com>
+Return-Path: <bounce@example-news.com>
+Reply-To: reply@example-news.com
+MIME-Version: 1.0
+X-Mailer: NewsletterSoft 2.0
+Received: from smtp.example-news.com (smtp.example-news.com [198.51.100.10])
+        by mx.example-recipient.com (Postfix) with ESMTPS id BBB222
+        for <subscriber@example-recipient.com>; Tue, 2 Jan 2024 08:30:10 +0000
+Received: from localhost ([127.0.0.1])
+        by smtp.example-news.com with SMTP id CCC333
+        Tue, 2 Jan 2024 08:30:01 +0000
+Authentication-Results: mx.example-recipient.com;
+        dkim=pass header.i=@example-news.com;
+        spf=pass (mx.example-recipient.com: domain of bounce@example-news.com
+             designates 198.51.100.10 as permitted sender) smtp.mailfrom=bounce@example-news.com;
+        dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=example-news.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=example-news.com;
+        s=newsletter; h=from:to:subject:date:message-id:mime-version;
+        bh=FAKEHASH1234567890ABCDEF==; b=FAKESIGNATUREVALUE1234567890==
+Received-SPF: pass (mx.example-recipient.com: domain of bounce@example-news.com
+        designates 198.51.100.10 as permitted sender)
+        receiver=mx.example-recipient.com; client-ip=198.51.100.10;
+Content-Type: multipart/alternative; boundary="----=_Part_42_boundary"
+
+------=_Part_42_boundary
+Content-Type: text/plain; charset=utf-8
+
+Weekly Digest -- Issue 42
+
+Hello subscriber,
+
+Here are this week's top stories:
+
+1. Python 3.14 released: https://www.python.org/downloads/
+2. Cybersecurity news: https://www.example-security.com/news/2024/01
+3. SIH 2026 updates: https://www.sih.gov.in/
+
+Visit our website: https://www.example-news.com
+Unsubscribe: https://www.example-news.com/unsubscribe?id=42
+
+------=_Part_42_boundary
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html>
+<html>
+<head><title>Weekly Digest</title></head>
+<body>
+  <h1>Weekly Digest &mdash; Issue 42</h1>
+  <p>Hello subscriber,</p>
+  <p>Here are this week&#39;s top stories:</p>
+  <ol>
+    <li><a href="https://www.python.org/downloads/">Python 3.14 released</a></li>
+    <li><a href="https://www.example-security.com/news/2024/01">Cybersecurity news</a></li>
+    <li><a href="https://www.sih.gov.in/">SIH 2026 updates</a></li>
+  </ol>
+  <p><a href="https://www.example-news.com">Visit our website</a></p>
+  <p><a href="https://www.example-news.com/unsubscribe?id=42">Unsubscribe</a></p>
+</body>
+</html>
+
+------=_Part_42_boundary--

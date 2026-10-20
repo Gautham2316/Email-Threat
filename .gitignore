@@ -218,3 +218,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Generated PDF reports
+reports/
+
+# Local environment variables and credentials
+.env.*
+!.env.example
+
+# Local model files and datasets
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.onnx
+*.gguf
+
+# Local geolocation databases
+*.mmdb
+

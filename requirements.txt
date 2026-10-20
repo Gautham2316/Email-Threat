@@ -1,0 +1,35 @@
+# requirements.txt
+# SIH 2026 — AI-Powered Email Threat Detection Platform
+#
+# Module 1 (Email Ingestion and Parsing Engine)
+# Uses only Python standard library packages.
+#
+# Module 2 (SPF, DKIM, and DMARC Authentication)
+dnspython>=2.6.0
+dkimpy>=1.1.8
+tldextract>=5.1.0
+
+# Module 3 (URL Threat Analysis Engine)
+# Uses standard library and tldextract (already listed above).
+
+# Module 4 (Email Routing Analysis and IP Geolocation)
+# Uses standard library (ipaddress, email.utils, re).
+# Optional offline database integration:
+# geoip2>=4.8.0           # Optional: For offline MaxMind GeoLite2 City (.mmdb) lookups
+
+# Module 5 (AI-Based Phishing and Scam-Text Classification Engine)
+# Optional dependencies for local deep learning inference:
+torch>=2.0.0
+transformers>=4.30.0
+
+# Module 6 (Evidence-Based Email Risk Scoring Engine)
+# Pure evidence fusion engine — uses standard library and integrates outputs from Modules 1–5.
+
+# Module 7 (PDF Forensic Report Generator)
+reportlab>=4.0.0
+
+# Module 8 (Interactive Forensic Web Dashboard)
+streamlit>=1.40.0
+
+# DKIM demo sample generation
+cryptography>=42.0.0

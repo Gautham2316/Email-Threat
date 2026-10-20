@@ -1,0 +1,73 @@
+From: "PayPal Security Team" <security@paypa1-secure.totally-not-evil.com>
+To: victim@example-victim.com
+Subject: URGENT: Your PayPal account has been suspended
+Date: Wed, 03 Jan 2024 03:17:42 +0000
+Message-ID: <phish-003@paypa1-secure.totally-not-evil.com>
+Reply-To: attacker@collect-credentials.com
+Return-Path: <bounce@paypa1-secure.totally-not-evil.com>
+X-Mailer: MassMail Blaster Pro v4.2
+X-Originating-IP: 192.168.1.100
+MIME-Version: 1.0
+Received: from mail.paypa1-secure.totally-not-evil.com
+        (mail.paypa1-secure.totally-not-evil.com [192.168.1.100])
+        by mx.example-victim.com (Postfix) with SMTP id DDD444
+        for <victim@example-victim.com>; Wed, 3 Jan 2024 03:17:50 +0000
+Received: from smtp.fakerelay.xyz ([10.0.0.99])
+        by mail.paypa1-secure.totally-not-evil.com with SMTP id EEE555
+        Wed, 3 Jan 2024 03:17:40 +0000
+Received: from [192.168.1.50] (unknown)
+        by smtp.fakerelay.xyz; Wed, 3 Jan 2024 03:17:38 +0000
+Authentication-Results: mx.example-victim.com;
+        dkim=fail (signature verification failed);
+        spf=fail (mx.example-victim.com: 192.168.1.100 is not a permitted sender
+             for domain paypa1-secure.totally-not-evil.com);
+        dmarc=fail (p=REJECT) header.from=paypa1-secure.totally-not-evil.com
+Received-SPF: fail (mx.example-victim.com: 192.168.1.100 is not a permitted
+        sender for domain paypa1-secure.totally-not-evil.com)
+        receiver=mx.example-victim.com; client-ip=192.168.1.100;
+Content-Type: multipart/alternative; boundary="----phish_boundary_99----"
+
+------phish_boundary_99----
+Content-Type: text/plain; charset=utf-8
+
+Dear Valued Customer,
+
+We have detected SUSPICIOUS ACTIVITY on your PayPal account.
+Your account has been TEMPORARILY SUSPENDED.
+
+To restore access, verify your identity immediately:
+http://paypal-account-verify.totally-not-evil.com/login?token=abc123xyz&user=victim
+
+Alternatively use our secure portal:
+https://secure.paypa1-restore.totally-not-evil.com/restore?ref=SUS9999
+
+If you do not act within 24 hours your account will be PERMANENTLY closed.
+
+-- PayPal Security Team
+
+------phish_boundary_99----
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html>
+<html>
+<head><title>Account Suspended</title></head>
+<body style="font-family: Arial, sans-serif;">
+  <img src="http://tracker.totally-not-evil.com/open-pixel.gif?uid=victim@example-victim.com"
+       width="1" height="1" alt="">
+  <h1 style="color:red;">Your Account Has Been Suspended</h1>
+  <p>Dear Valued Customer,</p>
+  <p>We detected <strong>SUSPICIOUS ACTIVITY</strong> on your account.</p>
+  <p>
+    <a href="http://paypal-account-verify.totally-not-evil.com/login?token=abc123xyz&user=victim"
+       style="background:blue;color:white;padding:10px;text-decoration:none;">
+      Verify My Account Now
+    </a>
+  </p>
+  <p>Or visit: <a href="https://secure.paypa1-restore.totally-not-evil.com/restore?ref=SUS9999">
+    https://secure.paypa1-restore.totally-not-evil.com/restore?ref=SUS9999</a>
+  </p>
+  <p>Support: <a href="http://support.totally-not-evil.com/">Contact Support</a></p>
+</body>
+</html>
+
+------phish_boundary_99------
